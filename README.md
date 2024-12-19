@@ -45,12 +45,43 @@ Run the interactive CLI with manual VAD (try asking for your phone number to see
 
 ```bash
 python ./examples/manual_cli.py
+
+# 控制台返回
+Starting Realtime API CLI...
+This process is not trusted! Input event monitoring will not be possible until it is added to accessibility clients.
+Connected to OpenAI Realtime API!
+Commands:
+- Type your message and press Enter to send text
+- Press 'r' to start recording audio
+- Press 'space' to stop recording
+- Press 'q' to quit
+
 ```
 
 Or to use streaming mode (which allows you to interrupt the chatbot):
-
+这个demo跑通
 ```bash
 python ./examples/streaming_cli.py
+
+# 控制台返回
+Starting Realtime API CLI with Server VAD...
+This process is not trusted! Input event monitoring will not be possible until it is added to accessibility clients.
+Connected to OpenAI Realtime API!
+Audio streaming will start automatically.
+Press 'q' to quit
+
+
+Streaming audio... Press 'q' to stop.
+
+[Speech detected
+
+[Speech ended]
+
+[Speech detected
+
+[Speech ended]
+
+
 ```
 
 **NOTE:** Streaming mode can be a little janky, best to use headphones in a quiet environment.
